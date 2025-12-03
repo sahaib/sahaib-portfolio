@@ -3,7 +3,7 @@ export const PROFILE_INFO = {
   logo: 'Sahaib.s',
   slogan: 'Building products that solve real problems',
   displayName: "Sahaib Singh",
-  email: "sahaib@work.sahaibsingh.com",
+  email: "hello@sahaibsingh.com",
   about: `
 I'm a product minded **technical solutions specialist** and **AI-assisted builder** who has been shipping real-world products since the age of 13. I blend customer understanding, technical depth, and execution to build tools that solve practical problems.
 
