@@ -22,8 +22,43 @@ import {
 import HonoIcon from '@/components/ui/icons/hono.astro'
 import FastapiIcon from '@/components/ui/icons/fastapi.astro'
 
+import OpenAIIcon from '@/components/ui/icons/openai.astro'
+import ChatGPTIcon from '@/components/ui/icons/chatgpt.astro'
+import CursorIcon from '@/components/ui/icons/cursor-ide.astro'
+import HuggingFaceIcon from '@/components/ui/icons/huggingface.astro'
+import OpenRouterIcon from '@/components/ui/icons/openrouter.astro'
+import AnthropicIcon from '@/components/ui/icons/anthropic.astro'
+import MicrosoftCopilotIcon from '@/components/ui/icons/microsoft-copilot-studio.astro'
 
 export const TECH_STACK = [
+  // Tech Stack and Tools — AI, Development, Platforms
+  // AI & LLM Tools
+  {
+    title: "OpenAI API",
+    href: "https://chat.openai.com/",
+    icon: ChatGPTIcon,
+  },
+  {
+    title: "Hugging Face",
+    href: "https://huggingface.co/",
+    icon: HuggingFaceIcon,
+  },
+  {
+    title: "OpenRouter API",
+    href: "https://openrouter.ai/",
+    icon: OpenRouterIcon,
+  },
+  {
+    title: "Claude (Anthropic)",
+    href: "https://www.anthropic.com/",
+    icon: AnthropicIcon,
+  },
+  {
+    title: "Microsoft Copilot Studio",
+    href: "https://copilotstudio.microsoft.com/",
+    icon: MicrosoftCopilotIcon,
+  },
+
   // Programming Languages
   {
     title: "TypeScript",
@@ -58,15 +93,6 @@ export const TECH_STACK = [
     icon: TailwindCSS,
   },
   {
-    title: "Redux",
-    href: "https://redux.js.org/",
-    icon: Redux,
-  },
-  {
-    title: "Zustand",
-    href: "https://zustand-demo.pmnd.rs/",
-  },
-  {
     title: "React Query",
     href: "https://tanstack.com/query/latest",
     icon: ReactQuery,
@@ -75,11 +101,6 @@ export const TECH_STACK = [
     title: "shadcn/ui",
     href: "https://ui.shadcn.com/",
     icon: ShadcnUI,
-  },
-  {
-    title: "Motion",
-    href: "https://motion.dev/",
-    icon: Framer,
   },
 
 
@@ -98,16 +119,6 @@ export const TECH_STACK = [
     title: "FastAPI",
     href: "https://fastapi.tiangolo.com/",
     icon: FastapiIcon
-  },
-  {
-    title: "Honojs",
-    href: "https://hono.dev/",
-    icon: HonoIcon
-  },
-  {
-    title: "Appwrite",
-    href: "https://appwrite.io",
-    icon: Appwrite
   },
 
   // Databases & Caching
@@ -143,4 +154,3 @@ export const TECH_STACK = [
     icon: Figma,
   },
 ];
-

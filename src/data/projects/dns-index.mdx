@@ -1,0 +1,40 @@
+---
+name: DNS Index
+type: side
+image: /og-images/projects/dns-index.png
+preview: https://dns-index.sahaibsingh.com/
+technologies:
+  - Node.js
+  - Express.js
+  - React.js
+  - DNS libraries
+description: A specialized platform for DNS monitoring and security insights, simplifying DNS troubleshooting and optimization.
+---
+
+# **DNS Index**
+
+![Screenshot of DNS Index Tool](/og-images/projects/dns-index.png)
+
+## **Overview**  
+DNS Index provides **advanced DNS zone file analysis**. Users can input a domain to see its DNS records, security scan results, email configuration checks (SPF/DKIM/DMARC), and even cloud detection. It’s aimed at network/security professionals.  
+
+## **Features**  
+- **Record Analysis:** Displays A, MX, CNAME, and other records.  
+- **Security Scan:** Highlights vulnerabilities or misconfigurations.  
+- **Email Checks:** Validates SPF, DKIM, DMARC for given domains.  
+- **Cloud Detection:** Identifies cloud provider records.  
+
+## **Tech Stack**  
+- **Backend:** Node.js / Express.js  
+- **DNS Engine:** Cloudflare API or DNS libraries for querying records  
+- **Frontend:** React.js (with form input and result tables)  
+- **Styling:** Tailwind CSS  
+
+## **Usage**  
+Visit the site and enter a domain to analyze. For local development:  
+1. Clone: `git clone https://github.com/sahaib/dns-index.git`.  
+2. Install: `npm install`.  
+3. Run: `npm run dev`.  
+4. Access the app at `localhost:3000` and use the analysis form.  
+
+---

@@ -1,12 +1,12 @@
 export const PROFILE_INFO = {
-  role: 'Software Engineer / Full-stack Developer',
-  logo: 'Louai.b',
-  slogan: 'Coding, Creativity, Coffee...',
-  displayName: "Louai Boumediene",
-  email: "boumedienelouai2@gmail.com",
+  role: 'Product & Technical Solutions · AI-assisted Builder',
+  logo: 'Sahaib.s',
+  slogan: 'Building products that solve real problems',
+  displayName: "Sahaib Singh",
+  email: "sahaib@work.sahaibsingh.com",
   about: `
-I'm a **software engineer** passionate about crafting high-quality digital experiences. With expertise in **full-stack** development and a strong eye for **UI/UX**, I build **performant, pixel-perfect** applications that are both functional and visually appealing.  
-Always **learning**, always **iterating**, always pushing boundaries.  
+I'm a product minded **technical solutions specialist** and **AI-assisted builder** who has been shipping real-world products since the age of 13. I blend customer understanding, technical depth, and execution to build tools that solve practical problems.
+
+I've worked across **marine tech**, **logistics**, **SaaS**, and **AI-driven consumer tools**, delivering high-impact solutions end to end. I care about clarity, performance, details, and building things that actually make people's lives easier.
 `,
 } as const;
-

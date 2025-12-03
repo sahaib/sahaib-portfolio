@@ -1,0 +1,42 @@
+---
+name: Deepseek AI Bot
+type: side
+image: /og-images/projects/deepseek-ai-bot.png
+sourceCode: https://github.com/sahaib/Deepseek-AI-Bot
+technologies:
+  - Python
+  - FastAPI
+  - React.js
+  - LangChain
+  - OpenAI API
+description: A document assistant bot that uses AI (LangChain) for semantic search and chat over documents.
+---
+
+# **Deepseek AI Bot**
+
+![Screenshot of Deepseek AI Bot](/og-images/projects/deepseek-ai-bot.png)
+
+## **Overview**  
+Deepseek AI Bot enables users to have **conversational interactions with documents**. By uploading a PDF, users can ask questions in natural language; the bot uses semantic search and LLMs to answer with citations.  
+
+## **Features**  
+- **Semantic Search:** Quickly finds relevant sections in a document.  
+- **Chat Interface:** Ask follow-up questions naturally.  
+- **Source Citations:** Provides references to where answers were found in the document.  
+- **Multi-Document Support:** Can handle multiple PDF uploads.  
+
+## **Tech Stack**  
+- **Backend:** FastAPI (Python)  
+- **AI:** LangChain with OpenAI or other LLMs for embeddings and generation  
+- **Frontend:** React.js (TypeScript)  
+- **Database:** SQLite or similar (for session state)  
+- **Security:** OAuth2 or API key management for OpenAI  
+
+## **Usage**  
+1. Clone: `git clone https://github.com/sahaib/Deepseek-AI-Bot.git`.  
+2. Install Python requirements: `pip install -r requirements.txt`.  
+3. Add your `OPENAI_API_KEY` in `.env`.  
+4. Run backend (`uvicorn main:app`) and frontend (`npm run dev`).  
+5. Interact by uploading a document and asking questions.  
+
+---

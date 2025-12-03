@@ -1,0 +1,128 @@
+---
+pubDatetime: 2025-02-01
+title: How Tokenization Actually Works - The Hidden Layer Behind Every LLM
+category: ai
+series: inside-the-stack
+draft: false
+image: /og-images/articles/tokenization-inside-the-stack.jpg
+tags:
+  - ai
+  - llm
+  - tokenization
+  - systems
+  - aiengineering
+description: A practical breakdown of tokenization and why understanding it instantly improves your prompts, model selection and output quality.
+---
+
+![Cover Image](/og-images/articles/tokenization-inside-the-stack.jpg)
+
+## Introduction
+
+Tokenization is the invisible layer that controls everything an LLM does — cost, speed, accuracy, comprehension and the way models read code or multilingual text. Most people ignore it. Most builders never study it.  
+But understanding tokenization immediately makes you better at prompting, choosing models and debugging strange model behaviors.
+
+This breakdown is part of **InsideTheStack** — practical engineering fundamentals for modern builders.
+
+---
+
+## Why tokenization matters
+
+Before a model thinks, it tokenizes.
+
+How your input splits into tokens determines:
+
+- **model cost**  
+- **response speed**  
+- **accuracy and coherence**  
+- **how well the model reads code**  
+- **how multilingual content is interpreted**  
+
+You can write the best prompt in the world, but if the model tokenizes it poorly, you’ll get mediocre output.
+
+Tokenization is the foundation behind every LLM — and most people skip it.
+
+---
+
+## The core mechanics
+
+Modern LLMs use different tokenization systems:
+
+- **BPE (Byte Pair Encoding)**  
+- **SentencePiece**  
+- **Unigram models**
+
+Example breakdown:
+```
+“authentication” → “auth”, “ent”, “ication”
+```
+This means:
+
+- long words split into subwords  
+- different tokenizers split at different points  
+- token count changes from model to model  
+
+Two models can read the *same* sentence in completely *different* ways.
+
+That’s why the same prompt feels “smarter” on one model and “dumber” on another.
+
+---
+
+## Scaling and performance
+
+Token count isn’t just a number. It affects every part of your system:
+
+- **prompt cost** (more tokens → higher cost)  
+- **latency** (more tokens → slower generation)  
+- **memory usage** (important for local AI)  
+- **context window limits** (hit the limit earlier with inefficient tokenization)  
+
+Models with efficient tokenization (like Qwen or Gemini in coding tasks) often outperform others because they:
+
+- compress code better  
+- tokenize symbols more intelligently  
+- pack more meaning into fewer tokens  
+
+Tokenization efficiency directly influences real performance.
+
+---
+
+## The builder mindset
+
+Understanding how your text splits at the token level teaches you:
+
+- **why prompts sometimes “break”**  
+  (a single symbol or spacing change can shift token boundaries)
+
+- **why numbers, dates and code tokenize differently**  
+  (models often treat them as isolated or multi-token sequences)
+
+- **why models behave differently across languages**  
+  (some tokenizers are optimized for English, others for multilingual tasks)
+
+Most AI users never learn this.  
+Serious builders need to.
+
+Tokenization is the key to understanding model behavior instead of guessing.
+
+---
+
+## Conclusion
+
+Tokenization is not a theory topic. It’s a practical engineering layer that shapes:
+
+- your cost  
+- your model choice  
+- your prompt design  
+- your output quality  
+- your system scaling  
+
+If you want to build with AI the right way, start by understanding how your words become tokens.
+
+---
+
+## Follow the journey
+
+For more raw, practical, real AI internals:
+
+**InsideTheStack continues.**  
+#InsideTheStack #Tokenization #LLM

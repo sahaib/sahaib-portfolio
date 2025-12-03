@@ -1,0 +1,162 @@
+---
+pubDatetime: 2025-03-04
+title: How Vercel and AI Helped Me Stop Unauthorized Access to reurl.dev in Minutes
+category: security
+series: reurl-journey
+draft: false
+image: /og-images/articles/vercel-ai-reurl-security.jpg
+tags:
+  - vercel
+  - ai-tools
+  - security
+  - middleware
+  - reurl
+  - buildinpublic
+description: How I used Vercel Firewall, Attack Challenge Mode, and AI-driven middleware to stop a wave of unauthorized requests targeting reurl.dev, just days before launch.
+---
+
+![Cover Image](/og-images/articles/vercel-ai-reurl-security.jpg)
+
+## Introduction
+
+I’m an AI-assisted developer, not a traditional engineer. I learn as I build. And reurl.dev — my free, fast, analytics-powered URL shortener — is one of the projects I’m most proud of.
+
+On **March 3, 2025**, just two days before my Product Hunt launch, reurl.dev was hit with thousands of **401 Unauthorized** requests. The traffic was clearly malicious and intense enough to threaten uptime, analytics accuracy and user experience.
+
+I had to act fast.
+
+This is how **Vercel** and **AI tools like Cursor** helped me detect the issue, block the attack, secure my endpoints and get reurl.dev stable again — all within minutes.
+
+---
+
+## The problem: a flood of unauthorized access
+
+While preparing updates for the BIP 3.0 community, my Vercel dashboard started showing unusual numbers:
+
+- **34.9K total requests**
+- **28.8K denied**
+- **429 challenged**
+- Spikes of **1.5K requests per minute**
+
+Almost all of them were unauthorized hits.
+
+As someone still learning backend security, this was overwhelming. But reurl.dev is my answer to overpriced and limited link tools, so seeing it under attack days before launch felt personal.
+
+---
+
+## Step 1: Vercel Attack Challenge Mode bought me time
+
+The first lifesaver was **Vercel Firewall**.
+
+I enabled **Attack Challenge Mode** which immediately began:
+
+- Challenging suspicious traffic  
+- Denying abusive patterns  
+- Allowing legitimate users through  
+- Showing real-time spikes and behavior  
+
+This gave me space to breathe and analyze instead of panicking. For someone still learning, this kind of platform support is priceless.
+
+Vercel’s automatic filtering handled the heavy load while I prepared the actual fix.
+
+---
+
+## Step 2: AI-generated middleware with Cursor IDE
+
+Once the attack was contained, I needed to stop the **401 spam** for good.  
+So I opened Cursor IDE and wrote something simple:
+
+> “Update my middleware to block IPs that cause repeated unauthorized access attempts and stop 401 errors.”
+
+Within seconds, Cursor produced a middleware script integrating **Redis** to:
+
+### 1. Apply rate limiting  
+Limit each IP to **10 requests/minute** and block excess with a 429.
+
+### 2. Track unauthorized IPs  
+Record source IPs for every failed or suspicious hit.
+
+### 3. Dynamically block bad actors  
+Move abusive IPs to a blacklist and return a **403 Forbidden** instantly.
+
+I deployed the middleware to Vercel and watched the logs refresh:
+
+- 401 errors: **Stopped**
+- Traffic: Stabilized
+- Only legitimate requests continued flowing
+
+The feeling was unreal. AI helped me build and deploy a “senior-level” fix in minutes.
+
+---
+
+## Step 3: Using Vercel Speed Insights to validate performance
+
+After stabilizing security, I wanted to ensure performance hadn’t tanked.
+
+Vercel’s **Speed Insights** showed:
+
+- Real Experience Score: **95 (P95)**
+- A warning to install the latest `@vercel/speed-insights` package
+
+I updated it:
+
+```bash
+npm i @vercel/speed-insights
+
+Added:
+
+<SpeedInsights />
+```
+
+And redeployed.
+
+Within 30 minutes, real data appeared again, confirming that reurl.dev was performing at full speed.
+
+⸻
+
+### Outcome: attack blocked, stability restored, lessons learned
+
+The full recovery took under 15 minutes:
+	•	Vercel blocked the surge
+	•	Attack Challenge Mode filtered the worst traffic
+	•	AI-generated middleware cut 401s to zero
+	•	Speed Insights confirmed no performance drop
+
+As an AI-assisted developer, this incident taught me that I don’t need to know everything — I need the right stack, the right tools, and the willingness to respond fast.
+
+⸻
+
+### Next steps for reurl.dev
+
+Here’s what I’m implementing next:
+
+1. Persistent IP blocking
+
+Storing blocked IPs in Redis with longer TTLs.
+
+2. Preventive measures
+
+Introducing reCAPTCHA or equivalent protection on sensitive routes.
+
+3. Improved monitoring
+
+Alerts and dashboards to notify me of unusual activity immediately.
+
+4. Sharing the journey
+
+Posting this on X and BIP 3.0 to inspire others building in public.
+
+⸻
+
+### Final thoughts
+
+I’m still learning, but modern tools like Vercel and Cursor IDE make professional-grade security accessible to people like me.
+
+This experience turned a scary moment into a breakthrough. If you’re learning security or backend development, remember:
+
+You don’t have to know everything.
+You have to be willing to adapt, respond and use the right tools.
+
+Try reurl.dev, support the project if you like, and let’s build a safer internet together — one small, meaningful improvement at a time.
+
+---
