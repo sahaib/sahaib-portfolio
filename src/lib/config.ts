@@ -4,6 +4,6 @@ export const SITE = {
   profile: "https://work.sahaibsingh.com",
   desc: "My digital space, projects, insights, and thoughts on product & technical solutions.",
   title: "Sahaib Singh",
-  ogImage: '/og-images/sahaib-singh.png',
+  ogImage: '/og-images/og-image.png',
   postPerPage: 6,
 } as const;
