@@ -9,6 +9,13 @@ export interface LinkedInPost {
 // Posts ordered from LATEST to OLDEST
 export const LINKEDIN_POSTS: LinkedInPost[] = [
   {
+    title: "Power Automate: The Most Underrated Tool For Replacing Boring Work", 
+    description: "Real-World Workflows That Actually Save Time",
+    publishedDate: "2025-12-26",
+    tags: [],
+    embedCode: `<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7409494889396133889?collapsed=1" height="600" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>`,
+  },  
+  {
     title: "IP Intelligence Playbook (From Building My Own Tool)", 
     description: "IP Intelligence: The Skill That Helps You Catch Threats Before They Become Incidents",
     publishedDate: "2025-12-24",
