@@ -17,7 +17,7 @@ export const NAV_LINKS = [
   },
   { 
     label: "Playbook", 
-    href: "/playbook" },
+    href: "https://tech.sahaibsingh.com/" },
 ] as const;
 
 export const SOCIAL_LINKS = [
