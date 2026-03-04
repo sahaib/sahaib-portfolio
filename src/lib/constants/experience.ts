@@ -2,11 +2,38 @@ import type { Experience } from "../types";
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "CarYaar (CARYAAR AUTO PRIVATE LIMITED)",
+    positions: [
+      {
+        title: "Co-founder, Tech",
+        year: "Mar 2026",
+        description: `
+- ♦ Co-founded CarYaar to build a trusted, tech-enabled car servicing experience for customers and workshop partners.
+- ♦ Leading the architecture and delivery of CarYaar's web and mobile applications across customer journeys and operations.
+- ♦ Building AI agent and automation workflows to improve response speed, internal productivity and service quality.
+- ♦ Implementing real time service updates so customers get transparent status visibility throughout the servicing lifecycle.
+- ♦ Designing systems and partner workflows to support OEM original spare parts usage with better operational reliability.
+- ♦ Owning cloud monitoring and reliability guardrails to keep platform performance, uptime and issue response predictable.
+            `,
+        skills: [
+          "AI Agents",
+          "AI Architecture",
+          "Web Development",
+          "Mobile App Development",
+          "Marketing",
+          "AI Automation",
+          "AI-assisted Coding",
+          "Cloud Monitoring",
+        ],
+      },
+    ],
+  },
+  {
     company: "NAVTOR India Pvt Ltd",
     positions: [
       {
         title: "Process and Efficiency Lead",
-        year: "09.2025 - present",
+        year: "09.2025 - 19 Mar 2026",
         description: `
 - ♦ Delivered high impact improvements across product, support and internal tooling within the first months, lifting customer experience for global maritime clients.
 - ♦ Built NAVTOR's first AI based support assistant using Microsoft Copilot Studio with automated ticket triage, root cause analysis and context gathering wired into internal APIs and documentation.

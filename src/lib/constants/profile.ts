@@ -1,12 +1,10 @@
 export const PROFILE_INFO = {
-  role: 'Product & Technical Solutions · AI-assisted Builder',
+  role: "Co-founder · Tech Lead",
   logo: 'Sahaib.s',
-  slogan: 'Building products that solve real problems',
+  slogan: "Building tech",
   displayName: "Sahaib Singh",
   email: "hello@sahaibsingh.com",
   about: `
-I'm a product minded **technical solutions specialist** and **AI-assisted builder** who has been shipping real-world products since the age of 13. I blend customer understanding, technical depth, and execution to build tools that solve practical problems.
-
-I've worked across **marine tech**, **logistics**, **SaaS**, and **AI-driven consumer tools**, delivering high-impact solutions end to end. I care about clarity, performance, details, and building things that actually make people's lives easier.
+I am currently building **CarYaar** to fulfill end-to-end car servicing needs through top-line workshops, real-time updates, and OEM original spare parts usage.
 `,
 } as const;
